@@ -162,7 +162,7 @@ download() {
     case $1 in
     core)
         link=https://github.com/${is_core_repo}/releases/latest/download/${is_core}-linux-${is_core_arch}.zip
-        [[ $is_core_ver ]] && link="https://github.com/${is_core_repo}/releases/download/${is_core_ver}/${is_core}-linux-${is_core_arch}.zip"
+        [[ $is_core_ver ]] && link="https://ghproxy.cn/https://github.com/${is_core_repo}/releases/download/${is_core_ver}/${is_core}-linux-${is_core_arch}.zip"
         name=$is_core_name
         tmpfile=$tmpcore
         is_ok=$is_core_ok
